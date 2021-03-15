@@ -1,0 +1,63 @@
+{
+	"name": "irvekon-app/irvekon-dashboard",
+	"description": "Demo Administration",
+	"type": "project",
+	
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/database.git"
+		},
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/application.git"
+		},
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/common-module.git"
+		},
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/arch-1.git"
+		},
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/datagrid.git"
+		},
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/forms.git"
+		},
+		{
+			"type": "vcs",
+			"url": "http://gitlab.irvekon.cz:8888/irvekon/stekycz-cronner.git"
+		}
+	],
+	
+	"require": {
+		"irvekon/database": "~1.0.0",
+		"irvekon/arch-1": "~1.0.0",
+		"robmorgan/phinx": "^0.8",
+		"irvekon/datagrid": "~1.1.2",
+		"irvekon/forms": "~1.0.0",
+		"kdyby/events": "^3.1@dev",
+		"symfony/filesystem": "^3.0",
+		"nette/tester": "^2.0@dev",
+		"ipub/visual-paginator": "1.0.7",
+		"kdyby/forms-replicator": "^1.4.0",
+		"kdyby/strict-objects": "1.0",
+		"mpdf/mpdf": "dev-master",
+		"tracy/tracy": "2.4",
+		"guzzlehttp/guzzle": "~6.0",
+		"jms/serializer": "^1.13",
+		"irvekon/stekycz-cronner": "~1.1.3"
+	},
+	
+	"minimum-stability": "dev",
+	
+	"config": {
+        "bin-dir": "bin",
+		"secure-http": false
+	}
+	
+}
