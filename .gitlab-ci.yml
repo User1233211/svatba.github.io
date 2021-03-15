@@ -1,0 +1,17 @@
+deploy_integration:
+    script:
+        - cap integration deploy
+    only:
+        - develop
+
+deploy_staging:
+    script:
+        - cap staging deploy
+    only:
+        - master
+
+deploy_production:
+    script:
+        - cap production deploy
+    only:
+        - release
