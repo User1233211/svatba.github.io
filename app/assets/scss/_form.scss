@@ -1,10 +1,10 @@
 .form {
-	margin-top: 3rem;
+	margin-top: 30px;
 	max-width: 400px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 2.2rem;
+	font-size: 1rem;
 	display: flex;
 	flex-direction: column;
 	input, textarea {
@@ -12,7 +12,7 @@
 		outline: none;
 		border-bottom: 1px solid #000;
 		font-size: 1.8rem;
-		padding-top: .5rem;
+		padding-top: 5px;
 
 		font-family: 'Roboto';
 		font-weight: 300;
@@ -20,18 +20,32 @@
 	button {
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 2rem;
+		margin-top: 20px;
 		background: #D3D3D3;
 		border: none;
-		padding: .5rem 2rem;
+		padding: 5px 20px;
 		user-select: none;
+		line-height: 1.6;
+		font-size: 16px;
 	}
 	&__element {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 1.5rem;
+		padding-bottom: 15px;
+		//font-size: 10px;
 		span {
+			font-size: 2.2rem;
 			margin-right: 2rem;
+		}
+	}
+	@media screen and (max-width: $md) {
+		.form {
+			input, textarea {
+				font-size: 2rem;
+			}
+			&__element {
+				font-size: 9px;
+			}
 		}
 	}
 }

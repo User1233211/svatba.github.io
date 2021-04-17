@@ -17,11 +17,24 @@
 .hero {
 	position: relative;
 	min-height: 100vh;
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 1rem;
+	&__text {
+		text-transform: uppercase;
+		font-size: 2.5em;
+	}
 	&__content {
-		min-height: 100vh;
+		min-height: 80vh;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: space-evenly;
 		align-items: center;
+		text-align: center;
+		padding: 3rem 1.5rem;
+		border: 2px solid $gold;
 	}
 	img {
 		position: absolute;
@@ -37,12 +50,33 @@
 
 .about {
 	&__text {
-		padding: 2rem 0;
+		padding: 50px 0;
 	}
 	&__image {
 		img {
 			min-height: 45rem;
 			object-fit: cover;
 		}
+	}
+}
+
+@media screen and (max-width: $md) {
+	.hero {
+		min-height: calc(100vh - 20px);
+		&__content {
+			min-height: calc(80vh - 20px);
+		}
+	}
+}
+
+@media screen and (max-width: $md) {
+	.hero {
+		font-size: .85rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.hero {
+		font-size: .8rem;
 	}
 }

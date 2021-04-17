@@ -5,6 +5,8 @@ $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
+$gold: #bda654;
+$main: #544e39;
 
 html {
 	font-size: 10px;
@@ -12,8 +14,13 @@ html {
 }
 body {
 	font-size: 1.6rem;
-	color: black;
-	font-family: 'Dancing Script', cursive;
+	color: $main;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+section {
+	overflow: hidden;
 }
 
 * {
@@ -24,12 +31,14 @@ body {
 
 p {
 	margin: 0;
-	font-size: 3rem;
+	font-size: 2.3rem;
 }
 
 h1 {
-	font-size: 10rem;
-	color: #fff;
+	font-size: 9em;
+	color: $gold;
+	font-weight: 400;
+	font-family: 'Playfair Display SC', serif;
 }
 
 h2 {
@@ -47,9 +56,18 @@ section:last-of-type {
 }
 
 @media screen and (max-width: $md) {
-
+	html {
+		font-size: 8px;
+	}
 	h1 {
-		font-size: 5rem
+		//font-size: 5rem;
+		width: min-content;
+	}
+}
+@media screen and (min-width: $xl) {
+
+	.container {
+		max-width: 1500px;
 	}
 
 }
