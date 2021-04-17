@@ -62,9 +62,9 @@
 
 @media screen and (max-width: $md) {
 	.hero {
-		min-height: calc(100vh - 60px);
+		min-height: calc(100vh - 58px);
 		&__content {
-			min-height: calc(80vh - 60px);
+			min-height: calc(80vh - 58px);
 		}
 	}
 }
