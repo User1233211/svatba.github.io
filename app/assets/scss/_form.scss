@@ -53,11 +53,27 @@
 	}
 }
 
+#slide-element {
+	display: none;
+}
+
+#slide-control {
+	&.active {
+		input {
+			&~.checkmark {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
 .checkbox {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	transform: translateY(2px);
+	margin-bottom: 0;
 	input {
 		display: none;
 		&:checked {
