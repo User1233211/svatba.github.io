@@ -4,14 +4,17 @@
 	align-items: center;
 }
 
-.vertical-center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.pb {
+	padding-bottom: 30px;
+	&--big {
+		padding-bottom: 60px;
+	}
 }
-
-.map {
-	margin-top: 5rem;
+.pt {
+	padding-top: 30px;
+	&--big {
+		padding-top: 60px;
+	}
 }
 
 .hero {
@@ -47,18 +50,17 @@
 	}
 }
 
-
-.about {
-	&__text {
-		padding: 50px 0;
-	}
-	&__image {
-		img {
-			min-height: 45rem;
-			object-fit: cover;
-		}
+ul {
+	li {
 	}
 }
+
+.fit-content {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 @media screen and (max-width: $md) {
 	.hero {
