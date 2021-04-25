@@ -57,6 +57,9 @@
 
 #slide-element {
 	display: none;
+	.form__element span {
+		font-size: 2rem;
+	}
 }
 
 #slide-control {

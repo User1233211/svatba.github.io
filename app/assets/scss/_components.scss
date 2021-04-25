@@ -51,7 +51,12 @@
 }
 
 ul {
+	padding-left: 17px;
 	li {
+		span {
+			display: inline-block;
+			width: 7rem;
+		}
 	}
 }
 
@@ -80,5 +85,12 @@ ul {
 @media screen and (max-width: 350px) {
 	.hero {
 		font-size: .8rem;
+	}
+	ul {
+		li {
+			span {
+				width: 6rem;
+			}
+		}
 	}
 }
