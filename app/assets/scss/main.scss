@@ -17,7 +17,7 @@ body {
 	color: $main;
 	font-weight: 400;
 	//font-family: 'Josefin Sans', sans-serif;
-	font-family: 'Playfair Display SC', serif;
+	font-family: 'Playfair Display', serif;
 	
 }
 
@@ -50,6 +50,9 @@ h2 {
 	font-size: 7rem;
 	line-height: 1;
 	margin-bottom: 25px;
+	font-family: 'Playfair Display SC', serif;
+	text-transform: lowercase;
+	font-weight: 400;
 	
 }
 
